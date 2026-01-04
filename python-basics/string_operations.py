@@ -27,8 +27,14 @@ print("Modified text:", new_text)
 
 # 6. split() without arguments splits the string on any whitespace (spaces, tabs, newlines).It treats consecutive whitespace as a single separator.
 #It removes leading and trailing whitespace automatically.
-str4 = " Terraform automates infrastrucure creation"
+str4 = " Terraform automates infrastructure   creation     "
 words = str4.split()
 print("Words:", words) #split() returns a list containing substrings of the original string.
+
+# 7. Searching a substring within a string
+str5 = "Docker containerizes application and its dependencies."
+substring = "and"
+if substring in str5:
+    print(substring, ": found in the text")
 
 
